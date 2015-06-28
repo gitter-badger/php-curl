@@ -271,7 +271,7 @@ abstract class Curl {
         curl_share_setopt($this->shareDescriptor, CURLSHOPT_SHARE, CURL_LOCK_DATA_DNS);
     }
 
-    public final function setOption(&$descriptor, $option, $value = null){
+    public function setOption(&$descriptor, $option, $value = null){
         if ($value === null){
             $descriptor['option'][$option] = $this->getDefaultOption($option);
         } else {
@@ -283,7 +283,7 @@ abstract class Curl {
 
     public abstract function removeOption($option);
 
-    public final function setOptions(&$descriptor, $options = []){
+    public function setOptions(&$descriptor, $options = []){
         foreach($options as $keySetting => $value){
             $this->setOption($descriptor, $keySetting, $options[$keySetting]);
         }
