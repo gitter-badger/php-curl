@@ -1,5 +1,5 @@
 {
-  "name": "bpteam/php-phantomjs",
+  "name": "bpteam/php-curl",
   "description": "tiny and slow ;) php classes for work with Curl",
   "minimum-stability": "dev",
   "authors": [
