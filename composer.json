@@ -1,0 +1,56 @@
+{
+  "name": "bpteam/php-phantomjs",
+  "description": "tiny and slow ;) php classes for work with Curl",
+  "minimum-stability": "dev",
+  "authors": [
+    {
+      "name": "Evgeny Pynykh",
+      "email": "bpteam22@gmail.com",
+      "homepage": "http://bpteam.net",
+      "role": "Developer"
+    }
+  ],
+  "require-dev": {
+    "codeclimate/php-test-reporter": "dev-master"
+  },
+  "require": {
+    "php": ">=5.5",
+    "bpteam/file": "master",
+    "bpteam/list": "master",
+    "bpteam/dry-text": "master",
+    "bpteam/cookie": "master",
+    "bpteam/user-agent-switcher": "master",
+    "bpteam/header-http": "master"
+  },
+  "repositories":[
+    {
+      "type": "vcs",
+      "url": "https://github.com/bpteam/file"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/bpteam/dry-text"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/bpteam/list"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/bpteam/cookie"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/bpteam/user-agent-switcher"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/bpteam/header-http"
+    }
+  ],
+  "autoload" : {
+    "psr-4": {
+      "bpteam\\Curl\\": ""
+    }
+  }
+}
