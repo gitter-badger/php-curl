@@ -79,7 +79,6 @@ class SingleCurl extends Curl{
             $descriptor['descriptor_key'] = uniqid('single_curl');
         }
         $descriptor['descriptor'] = curl_init();
-        $this->cookie->open($descriptor['descriptor_key']);
     }
 
     protected function exec(){

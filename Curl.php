@@ -149,7 +149,6 @@ abstract class Curl {
      */
     public function setUseProxy($useProxy, $type = CURLPROXY_HTTP) {
         $this->useProxy = $this->setProxy($useProxy, $type);
-
     }
 
     /**
@@ -255,7 +254,7 @@ abstract class Curl {
 
     function __destruct(){
         curl_share_close($this->shareDescriptor);
-        $this->cookie->deleteFile();
+        $this->cookie->deleteOldFiles();
     }
 
     public abstract function load($url);
